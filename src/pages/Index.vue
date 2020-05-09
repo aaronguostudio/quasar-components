@@ -1,11 +1,23 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-
+  <q-page class="q-pa-md">
+    <div>
+      <Avatar
+        firstName="Aaron"
+        lastName="Guo"
+        showName
+        color="primary"
+        initialColor="white"
+      />
+    </div>
   </q-page>
 </template>
 
-<script lang="ts">
+<script>
+import Avatar from '../components/Avatar'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: {
+    Avatar
+  }
 }
 </script>

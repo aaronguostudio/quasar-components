@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center">
-    <q-avatar :color="color" :size="size">
+    <q-avatar :color="color" :text-color="initialColor" :size="size">
       <img v-if="showAvatar" src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
       <div v-else>{{initials}}</div>
     </q-avatar>
@@ -17,9 +17,13 @@ export default {
       type: String,
       default: 'grey'
     },
+    initialColor: {
+      type: String,
+      default: 'black'
+    },
     size: {
       type: String,
-      default: '1.6rem'
+      default: '1.8rem'
     },
     firstName: {
       type: String,

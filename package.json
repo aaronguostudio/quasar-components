@@ -1,6 +1,6 @@
 {
   "name": "quasar-components",
-  "version": "0.0.4",
+  "version": "0.0.10",
   "description": "Extending quasar components",
   "main": "src/index.js",
   "keywords": [
@@ -15,7 +15,8 @@
   "scripts": {
     "start": "quasar dev",
     "build": "quasar build",
-    "publish": "npm publish",
+    "predeploy": "yarn build",
+    "deploy": "aws s3 sync ./dist/spa s3://quasar-components --profile=aaron",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore ./",
     "test": "echo \"No test specified\" && exit 0"
   },

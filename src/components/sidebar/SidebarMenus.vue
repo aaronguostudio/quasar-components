@@ -1,8 +1,8 @@
 <template>
   <q-list class="drawer-menus">
     <q-item
-      class="menu"
       v-for="menu in menus"
+      :class="itemClass"
       :key="menu.label"
       :to="menu.path"
       exact
@@ -10,7 +10,7 @@
       v-ripple
     >
       <q-item-section class="flex flex-center" avatar>
-        <q-icon :size="size" :name="menu.icon" />
+        <q-icon :size="iconSize" :name="menu.icon" />
       </q-item-section>
       <q-item-section>
         {{ menu.label }}
@@ -30,6 +30,10 @@ export default {
     iconSize: {
       type: String,
       default: '1.3rem'
+    },
+    itemClass: {
+      type: String,
+      default: ''
     }
   }
 }

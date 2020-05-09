@@ -1,6 +1,6 @@
 {
   "name": "quasar-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extending quasar components",
   "main": "src/index.js",
   "keywords": [
@@ -13,6 +13,9 @@
   "capacitorId": "",
   "author": "aaronguostudio <aaronguostudio@gmail.com>",
   "scripts": {
+    "start": "quasar dev",
+    "build": "quasar build",
+    "publish": "npm publish",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore ./",
     "test": "echo \"No test specified\" && exit 0"
   },

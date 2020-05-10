@@ -1,8 +1,9 @@
 {
   "name": "quasar-components",
-  "version": "0.0.10",
+  "version": "0.0.16",
   "description": "Extending quasar components",
   "main": "src/index.js",
+  "types": "./lib/index.d.ts",
   "keywords": [
     "vue",
     "quasar",
